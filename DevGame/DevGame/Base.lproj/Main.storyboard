@@ -18,23 +18,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bR7-Ie-nKi">
-                                <rect key="frame" x="137" y="273" width="42" height="21"/>
+                            <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceG-pE-yUf">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arabidopsis1" translatesAutoresizingMaskIntoConstraints="NO" id="vBd-SP-pWE">
+                                <rect key="frame" x="20" y="40" width="335" height="607"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo1" translatesAutoresizingMaskIntoConstraints="NO" id="uOQ-cw-guX">
+                                <rect key="frame" x="94" y="287" width="207" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZO-0D-Nm0">
+                                <rect key="frame" x="26" y="368" width="101" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Continue"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acI-bp-xZ7">
+                                <rect key="frame" x="259" y="265" width="109" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Instructions"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEb-UX-dcr">
+                                <rect key="frame" x="261" y="382" width="98" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Experimental"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5D-ge-Dq2">
+                                <rect key="frame" x="32" y="287" width="57" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="NewGame"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vBd-SP-pWE" secondAttribute="bottom" constant="20" id="2eI-XI-0cM"/>
+                            <constraint firstItem="ceG-pE-yUf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Dey-Yj-U9e"/>
+                            <constraint firstItem="vBd-SP-pWE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="K6h-vg-OcF"/>
+                            <constraint firstItem="vBd-SP-pWE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="RFb-45-Leq"/>
+                            <constraint firstItem="ceG-pE-yUf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TGp-mP-7fS"/>
+                            <constraint firstAttribute="bottom" secondItem="ceG-pE-yUf" secondAttribute="bottom" id="c8w-h5-yaB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vBd-SP-pWE" secondAttribute="trailing" constant="20" id="ktz-M5-QWI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ceG-pE-yUf" secondAttribute="trailing" id="vLp-QJ-YxZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="theLabel" destination="bR7-Ie-nKi" id="GNC-Ti-doC"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Arabidopsis1" width="1476" height="1484"/>
+        <image name="Continue" width="448" height="97"/>
+        <image name="Experimental" width="360" height="145"/>
+        <image name="Instructions" width="360" height="61"/>
+        <image name="Logo1" width="1067" height="356"/>
+        <image name="NewGame" width="213" height="163"/>
+    </resources>
 </document>
